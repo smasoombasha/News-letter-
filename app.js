@@ -40,10 +40,10 @@ app.post("/", function(req, res) {
   const jasonData = JSON.stringify(data);
 
 
-  const url = "https://us14.api.mailchimp.com/3.0/lists/ff3f2ebc62";
+  const url = "MAILCHIMP LINK / ID";
   const options = {
     method: "POST",
-    auth: "masoom1:43f04731b09c3144897c2907dc0802cb-us14"
+    auth: "masoom1: API KEY IS HERE"
   };
   const request = https.request(url, options, function(response) {
 
@@ -75,5 +75,4 @@ app.listen(process.env.PORT || 3000, function() {
   console.log("Your server is conntected to port 3000.");
 });
 
-// api key
-//43f04731b09c3144897c2907dc0802cb-us14
+ 
